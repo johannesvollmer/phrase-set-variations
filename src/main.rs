@@ -19,7 +19,7 @@ fn main() {
 
     // create a function that writes a line to the output file
     let mut output_line = {
-        let output_file_name = format!("phrases/variation-triplets-xl-{}.txt", rand::thread_rng().gen::<u16>());
+        let output_file_name = format!("phrases/generated/variation-triplets-xl-{}.txt", rand::thread_rng().gen::<u16>());
         assert!(!Path::new(&output_file_name).exists());
 
         let mut output_file = File::create(output_file_name).unwrap();
