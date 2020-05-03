@@ -1,0 +1,11 @@
+[package]
+name = "phrase-set-variations"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rust-bert = { git = "https://github.com/guillaume-be/rust-bert" }
+rand = "0.7.3"
+tch = "0.1.7"
