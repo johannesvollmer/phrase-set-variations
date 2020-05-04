@@ -1285,8 +1285,9 @@ dependencies = [
 
 [[package]]
 name = "rust-bert"
-version = "0.7.1"
-source = "git+https://github.com/guillaume-be/rust-bert#9f4afc62ac3efc709a063084cf6693e4eac54377"
+version = "0.7.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8503ab7196b5423e4b45fba445931e32b4f1400eae1fa271b0cc8126fd3a8c86"
 dependencies = [
  "csv",
  "dirs",
@@ -1304,9 +1305,9 @@ dependencies = [
 
 [[package]]
 name = "rust_tokenizers"
-version = "2.0.4"
+version = "2.0.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3f2d795b374878864221f99cc7b0aa09efc79036d0c59d494e8cd47285b2beb0"
+checksum = "da1082f635a8c4b8df971ad7b31a38e91ee437921784a8390deb60b39c34a5eb"
 dependencies = [
  "csv",
  "itertools 0.8.2",
