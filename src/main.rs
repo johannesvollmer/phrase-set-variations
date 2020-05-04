@@ -9,9 +9,6 @@ use rust_bert::resources::{Resource, RemoteResource};
 use std::path::Path;
 
 fn main() {
-    // use torch_sys::dummy_cuda_dependency;
-    // unsafe { dummy_cuda_dependency(); }
-
 
     // this file contains one short and memorable phrase per line
     // see https://www.yorku.ca/mack/chi03b.html (accessed 1st May 2020)
@@ -46,17 +43,12 @@ fn main() {
         do_sample: true, // generates new random stuff each time
         temperature: 1.5,
 
-        // top_k: 0,
-        // top_p: 0.0,
-        // early_stopping: false,
-        // num_beams: 5,
-
         model_resource: Resource::Remote(RemoteResource::from_pretrained(Gpt2ModelResources::GPT2_XL)),
         merges_resource: Resource::Remote(RemoteResource::from_pretrained(Gpt2MergesResources::GPT2_XL)),
         vocab_resource: Resource::Remote(RemoteResource::from_pretrained(Gpt2VocabResources::GPT2_XL)),
         config_resource: Resource::Remote(RemoteResource::from_pretrained(Gpt2ConfigResources::GPT2_XL)),
 
-        // device: Device::Cuda(0), // FIXME
+        // device: Device::Cuda(0), // TODO
 
         ..Default::default()
 
